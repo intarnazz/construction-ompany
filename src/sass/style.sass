@@ -1,0 +1,43 @@
+$mainText: #000
+$whiteText: rgba(255, 255, 255, .8)
+
+*
+  box-sizing: border-box
+
+body
+  font-family: Arial, Helvetica, sans-serif
+
+a
+  color: $mainText
+  text-decoration: none
+
+h2
+  font-size: 2em
+
+
+  
+.header
+  background-color: #2f4156
+  width: 100vw
+  display: flex
+  color: $whiteText
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__logo-img
+    width: 200px
+  &__logo
+    display: flex
+    align-items: center
+
+.wrapper
+  min-width: 1300px
+  margin: auto
+
+.nav
+  &__wrapper
+    display: flex
+    gap: 1em
+  &__item-link
+    color: $whiteText
