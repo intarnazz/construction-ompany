@@ -71,18 +71,32 @@ button:focus
   width: 100vw
   display: flex
 
-
 .swiper-slide
-  position: relative
   &__img
     object-fit: cover
     width: 100vw
     height: calc(99.6vh - 100px)
   &__info_wrapper
     position: absolute
-    top: 50px
-    left: 50px
-  &__item 
+    left: calc(((100vw - 1300px)/2) + 10px )
+    top: 10px
+  &__list
+    display: flex
+    flex-direction: column
+    gap: 3px
+  &__item
+    font-size: 19px
     display: flex
     justify-content: space-between
-    width: 200px
+    width: 300px
+  &__value
+    width: 140px
+    &_title
+      font-size: 1.2em
+      font-weight: 700
+      margin: .5em 0
+  &__key
+    &_title
+      font-size: 1.2em
+      font-weight: 700
+      margin: .5em 0

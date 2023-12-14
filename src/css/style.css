@@ -86,9 +86,6 @@ button:focus {
   display: flex;
 }
 
-.swiper-slide {
-  position: relative;
-}
 .swiper-slide__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -97,11 +94,30 @@ button:focus {
 }
 .swiper-slide__info_wrapper {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  left: calc((100vw - 1300px) / 2 + 10px);
+  top: 10px;
+}
+.swiper-slide__list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 .swiper-slide__item {
+  font-size: 19px;
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 300px;
+}
+.swiper-slide__value {
+  width: 140px;
+}
+.swiper-slide__value_title {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+.swiper-slide__key_title {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0.5em 0;
 }/*# sourceMappingURL=style.css.map */
