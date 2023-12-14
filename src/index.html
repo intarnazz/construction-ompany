@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalise.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <title>Document</title>
   </head>
   <body>
@@ -14,24 +19,21 @@
         <div class="header__top">
           <div class="header__logo">
             <img class="header__logo-img" src="./icons/logo.svg" alt="" />
-            <h2>Комплексные <br> решения для фасадов</h2>
+            <h2>
+              Комплексные <br />
+              решения для фасадов
+            </h2>
           </div>
           <nav class="header__nav nav">
             <ul class="nav__wrapper">
               <a href="" class="nav__item-link">
-                <li class="nav__item">
-                  Услуги
-                </li>
+                <li class="nav__item">Услуги</li>
               </a>
               <a href="" class="nav__item-link">
-                <li class="nav__item">
-                  Стоимость материалов и мотажа
-                </li>
+                <li class="nav__item">Стоимость материалов и мотажа</li>
               </a>
               <a href="" class="nav__item-link">
-                <li class="nav__item">
-                  Портфолио
-                </li>
+                <li class="nav__item">Портфолио</li>
               </a>
             </ul>
           </nav>
@@ -39,5 +41,33 @@
         <div class="header__bottom"></div>
       </div>
     </header>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="img swiper-slide">
+          <img src="./img/images.png" alt="" />
+        </div>
+        <div class="img swiper-slide">
+          <img src="./img/snimok-ekrana-2021-10-08-v-17.27.06.jpg" alt="" />
+        </div>
+        <div class="img swiper-slide">
+          <img src="./img/1.png" alt="" />
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
