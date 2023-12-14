@@ -14,12 +14,39 @@ a
 h2
   font-size: 2em
 
+input
+  color: #000
+  border: none
+
+input:focus
+  outline: none
+
+button
+  cursor: pointer
+  color: #000
+  border: none
+
+button:focus
+  outline: none
+
+::-webkit-scrollbar
+  width: 7px
+
+::-webkit-scrollbar-vertical
+  background-color: #f1f1f1
+
+::-webkit-scrollbar-thumb
+  background-color: #000
+  border-radius: 6px
+
 .header
   background-color: #2f4156
-  width: 100vw
+  width: 100%
   display: flex
   color: $whiteText
+  height: 100px
   &__top
+    width: 100%
     display: flex
     align-items: center
     justify-content: space-between
@@ -30,7 +57,7 @@ h2
     align-items: center
 
 .wrapper
-  min-width: 1300px
+  width: 1300px
   margin: auto
 
 .nav
@@ -39,3 +66,23 @@ h2
     gap: 1em
   &__item-link
     color: $whiteText
+
+.main
+  width: 100vw
+  display: flex
+
+
+.swiper-slide
+  position: relative
+  &__img
+    object-fit: cover
+    width: 100vw
+    height: calc(99.6vh - 100px)
+  &__info_wrapper
+    position: absolute
+    top: 50px
+    left: 50px
+  &__item 
+    display: flex
+    justify-content: space-between
+    width: 200px
