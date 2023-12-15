@@ -241,7 +241,7 @@ hr {
   height: 467px;
   top: 0;
   left: 0;
-  opacity: 0.06;
+  opacity: 0.04;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -261,7 +261,7 @@ hr {
   background-color: #323232;
 }
 .section-advantages__item_grey-blue {
-  background-color: #404657;
+  background-color: #2c313d;
 }
 .section-advantages__item-title {
   padding: 0 1em;
