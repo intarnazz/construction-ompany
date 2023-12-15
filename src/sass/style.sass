@@ -1,7 +1,25 @@
 $mainText: #000
-$whiteText: rgba(255, 255, 255, .8)
+$secondText: rgba(255, 255, 255, .8)
 $hederColor: rgb(41, 95, 136)
 $mainColor: #f9f6f3
+$secondColor: #e07e00
+$grey: rgba(0, 0, 0, .5)
+
+:root
+  --swiper-theme-color: rgb(41, 95, 136)
+
+::-webkit-scrollbar
+  width: 7px
+  background-color: #868686
+
+::-webkit-scrollbar-thumb
+  background-color: #202020
+  border-radius: 6px
+
+// input[type="number"]::-webkit-inner-spin-button,
+// input[type="number"]::-webkit-outer-spin-button
+//   -webkit-appearance: none
+//   margin: 0
 
 *
   box-sizing: border-box
@@ -19,6 +37,15 @@ h2
 
 h3
   font-size: 2em
+
+h4
+  font-size: 3em
+
+h5
+  font-weight: 700
+  font-size: 1.2em
+  margin-bottom: .5em
+
 input
   color: #000
   border: none
@@ -34,21 +61,17 @@ button
 button:focus
   outline: none
 
-::-webkit-scrollbar
-  width: 7px
+hr
+  margin: 2em 0
 
-::-webkit-scrollbar-vertical
-  background-color: #f1f1f1
-
-::-webkit-scrollbar-thumb
-  background-color: #000
-  border-radius: 6px
+.margin-wrapper
+  margin-top: 2em
 
 .header
   background-color: $hederColor
   width: 100%
   display: flex
-  color: $whiteText
+  color: $secondText
   height: 100px
   &__top
     width: 100%
@@ -70,18 +93,21 @@ button:focus
     display: flex
     gap: 1em
   &__item-link
-    color: $whiteText
+    color: $secondText
 
 .main
   width: 100vw
   display: flex
 
+.section-swiper
+  background-color: $hederColor
+
 .swiper-slide
-  color: $whiteText
+  color: $secondText
   &__img
     object-fit: cover
     width: 100vw
-    height: calc(99.6vh - 100px)
+    height: calc(100vh - 100px)
   &__bg
     position: absolute
     top: 0
@@ -115,10 +141,13 @@ button:focus
       margin: .5em 0
 
 .section-connect-with-us
+  font-size: 1.22em
   &__top
     display: flex
     justify-content: space-between
     text-align: center
+  &__text-wrapper
+    padding: 0 4em
 
 .form
   padding: 1em 0
@@ -127,11 +156,111 @@ button:focus
   justify-content: space-between
   align-items: center
   &__input
-    background-color: #fff
-    border: 1px solid #7a7a7a
+    font-size: 1.5em
+  &__input-wrapper
+    display: flex
+    gap: 1em
   &__button
     padding: .5em 3em
     background-color: #e07e00
     color: #fff
     font-weight: 700
     font-size: 1.3em
+  &__input-border
+    display: flex
+    border: 1px solid $grey
+    align-items: center
+
+.line
+  height: 20px
+  border-right: 1px solid $grey
+  &__short
+    width: 4em
+    border-top: 3px solid $secondColor
+
+.section-advantages
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1em
+  &__title
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__title-top
+    gap: .1em
+    display: flex
+    align-items: center
+  &__title-bottom
+    text-align: center
+  &__list
+    text-align: center
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 2em
+  &__item-bg
+    position: absolute
+    width: 1300px
+    height: 467px
+    top: 0
+    left: 0
+    opacity: .06
+    object-fit: cover
+  &__item
+    position: relative
+    padding: 7em 7em
+    width: 100%
+    color: $secondText
+    display: flex
+    gap: 1em
+    flex-direction: column
+    &_orange
+      background-color: $secondColor
+    &_grey
+      background-color: #323232
+    &_grey-blue
+      background-color: #404657
+  &__item-title
+    padding: 0 1em
+  &__item-text
+    font-size: 1.3em
+    padding: 0 12em
+  &__item-info-list
+    font-size: 1.2em
+    border-left: 10px solid #fff
+    display: flex
+    gap: 1em
+    padding: .1em 0 .1em 1em
+    text-align: start
+  &__item-info-item
+    flex: 1
+  &__item-info-item_first
+    flex: 2
+
+.material-symbols-outlined
+  color: $secondColor
+  font-variation-settings: 'FILL' 1,'wght' 400,'GRAD' 0,'opsz' 24
+
+.footer
+  color: $mainText
+  display: flex
+  padding: 2em 0
+  &__item-link
+    color: $mainText
+  &__logo-img
+    width: 200px
+  &__logo
+    display: flex
+    align-items: center
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__nav
+    font-size: 1.2em
+  &__nav-wrapper
+    display: flex
+    flex-direction: column
+    gap: 2em
