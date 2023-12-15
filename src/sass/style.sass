@@ -1,6 +1,7 @@
 $mainText: #000
 $whiteText: rgba(255, 255, 255, .8)
-$mainColor: #2f4156
+$hederColor: rgb(41, 95, 136)
+$mainColor: #f9f6f3
 
 *
   box-sizing: border-box
@@ -16,6 +17,8 @@ a
 h2
   font-size: 2em
 
+h3
+  font-size: 2em
 input
   color: #000
   border: none
@@ -42,7 +45,7 @@ button:focus
   border-radius: 6px
 
 .header
-  background-color: $mainColor
+  background-color: $hederColor
   width: 100%
   display: flex
   color: $whiteText
@@ -85,7 +88,7 @@ button:focus
     left: 0
     width: 100vw
     height: 200px
-    background: linear-gradient($mainColor, rgba(47, 65, 86, .0))
+    background: linear-gradient($hederColor, rgba(41, 95, 136, .0))
   &__info_wrapper
     position: absolute
     left: calc(((100vw - 1300px)/2) + 10px )
@@ -110,3 +113,25 @@ button:focus
       font-size: 1.2em
       font-weight: 700
       margin: .5em 0
+
+.section-connect-with-us
+  &__top
+    display: flex
+    justify-content: space-between
+    text-align: center
+
+.form
+  padding: 1em 0
+  display: flex
+  width: 100%
+  justify-content: space-between
+  align-items: center
+  &__input
+    background-color: #fff
+    border: 1px solid #7a7a7a
+  &__button
+    padding: .5em 3em
+    background-color: #e07e00
+    color: #fff
+    font-weight: 700
+    font-size: 1.3em
