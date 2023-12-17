@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto;
   font-weight: 400;
@@ -435,6 +439,7 @@ hr {
   }
   .section-advantages__item-info-list {
     flex-direction: column;
+    border-left: 4px solid #fff;
   }
   .section-advantages__item {
     padding: 1em;
@@ -443,6 +448,9 @@ hr {
 @media screen and (max-width: 426px) {
   h4 {
     font-size: 2em;
+  }
+  h5 {
+    text-decoration: underline;
   }
   .section-advantages__item-title {
     text-align: left;

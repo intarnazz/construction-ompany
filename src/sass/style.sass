@@ -1,9 +1,4 @@
-$mainText: #000
-$secondText: rgba(255, 255, 255, .8)
-$hederColor: rgb(41, 95, 136)
-$mainColor: #f9f6f3
-$secondColor: #e07e00
-$grey: rgba(0, 0, 0, .5)
+@import ./var.sass
 
 @font-face
   font-family: Roboto
@@ -30,6 +25,9 @@ $grey: rgba(0, 0, 0, .5)
 
 *
   box-sizing: border-box
+
+html
+  scroll-behavior: smooth
 
 body
   font-family: Roboto
@@ -359,12 +357,15 @@ hr
   .section-advantages
     &__item-info-list
       flex-direction: column
+      border-left: 4px solid #fff
     &__item
       padding: 1em
 
 @media screen and (max-width: 426px)
   h4
     font-size: 2em
+  h5
+    text-decoration: underline
   .section-advantages
     &__item-title
       text-align: left
