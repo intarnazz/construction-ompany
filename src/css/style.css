@@ -445,6 +445,9 @@ hr {
   }
 }
 @media screen and (max-width: 680px) {
+  h5 {
+    text-decoration: underline;
+  }
   .header {
     height: 200px;
   }
@@ -469,9 +472,6 @@ hr {
 @media screen and (max-width: 426px) {
   h4 {
     font-size: 2em;
-  }
-  h5 {
-    text-decoration: underline;
   }
   .section-advantages__item-title {
     text-align: left;
