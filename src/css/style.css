@@ -133,6 +133,9 @@ hr {
 .nav__item-link {
   color: rgba(255, 255, 255, 0.8);
 }
+.nav__item-link__black {
+  color: #f9f6f3;
+}
 
 .main {
   width: 100%;
@@ -148,20 +151,20 @@ hr {
 .swiper-slide__img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100vw;
+  width: 100%;
   height: calc(100vh - 100px);
 }
 .swiper-slide__bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background: linear-gradient(rgb(41, 95, 136), rgba(41, 95, 136, 0));
 }
 .swiper-slide__info_wrapper {
   position: absolute;
-  left: calc((100vw - 1300px) / 2 + 10px);
+  left: calc((100% - 1300px) / 2 + 10px);
   top: 10px;
 }
 .swiper-slide__list {
@@ -336,12 +339,9 @@ hr {
 }
 
 .footer {
-  color: #000;
+  color: #505050;
   display: flex;
   padding: 2em 0;
-}
-.footer__item-link {
-  color: #000;
 }
 .footer__logo-img {
   width: 200px;
@@ -368,14 +368,14 @@ hr {
   body {
     font-size: 15px;
   }
+  .footer {
+    padding: 0 1em 2em;
+  }
   .wrapper {
     width: 100%;
   }
   .section-advantages__item-bg {
-    width: 100vw;
-  }
-  .swiper-slide__info_wrapper {
-    left: 10px;
+    width: 100%;
   }
   .section-advantages__item {
     padding: 7em;
@@ -386,13 +386,16 @@ hr {
   .section-advantages__item-text {
     padding: 0;
   }
+  .swiper-slide__info_wrapper {
+    left: 10px;
+  }
 }
 @media screen and (max-width: 970px) {
   body {
     font-size: 14px;
   }
   .section-advantages__item {
-    padding: 3em;
+    padding: 6em;
   }
 }
 @media screen and (max-width: 770px) {
@@ -413,7 +416,7 @@ hr {
     justify-content: center;
   }
   .section-advantages__item {
-    padding: 1em;
+    padding: 5em;
   }
 }
 @media screen and (max-width: 680px) {
@@ -433,12 +436,33 @@ hr {
   .section-advantages__item-info-list {
     flex-direction: column;
   }
+  .section-advantages__item {
+    padding: 1em;
+  }
 }
 @media screen and (max-width: 426px) {
+  h4 {
+    font-size: 2em;
+  }
+  .section-advantages__item-title {
+    text-align: left;
+  }
+  .section-advantages__item-text {
+    text-align: left;
+  }
   .header__title {
     display: none;
   }
   .header__top {
     justify-content: center;
+  }
+  .footer__wrapper {
+    flex-direction: column;
+  }
+  .bg_1 {
+    height: 350px !important;
+  }
+  .bg_3 {
+    height: 740px !important;
   }
 }/*# sourceMappingURL=style.css.map */
