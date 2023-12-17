@@ -38,6 +38,7 @@
   flex-direction: column;
   width: 300px;
   transition: 0.5s;
+  margin-top: 30px;
 }
 .list-offers__item:hover {
   scale: 1.2;

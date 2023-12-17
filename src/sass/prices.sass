@@ -1,9 +1,5 @@
-$mainText: #000
-$secondText: rgba(255, 255, 255, .8)
-$hederColor: rgb(41, 95, 136)
-$mainColor: #f9f6f3
-$secondColor: #e07e00
-$grey: rgba(0, 0, 0, .5)
+@import ./var.sass
+
   
 .section-prices
   &__title
@@ -41,6 +37,7 @@ $grey: rgba(0, 0, 0, .5)
     flex-direction: column
     width: 300px
     transition: .5s
+    margin-top: 30px
   &__item:hover
     scale: 1.2
   &__item:hover .decor-line__center

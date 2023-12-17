@@ -1,6 +1,3 @@
-new Swiper('.swiper', {
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+function scrollTopEvent() {
+  document.documentElement.scrollTop = 0;
+}
