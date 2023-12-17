@@ -336,6 +336,7 @@ hr {
 .title {
   display: flex;
   align-items: center;
+  gap: 0.5em;
 }
 .title__line {
   border-top: 2px solid #e07e00;

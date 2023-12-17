@@ -67,12 +67,9 @@
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 300px;
-  height: 294px;
+  width: 290px;
   opacity: 0.1;
-}
-.list-offers__info-bg_little {
-  height: 165px;
+  transition: 0;
 }
 .list-offers__info-wrapper {
   position: relative;
@@ -88,4 +85,20 @@
   font-size: 1.7em;
   font-weight: 700;
   color: #e07e00;
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    width: 965px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .wrapper {
+    width: 645px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wrapper {
+    width: 315px;
+  }
 }/*# sourceMappingURL=prices.css.map */

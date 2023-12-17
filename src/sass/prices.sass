@@ -60,11 +60,9 @@
     top: 0
     left: 0
     object-fit: cover
-    width: 300px
-    height: 294px
+    width: 290px
     opacity: .1
-    &_little
-      height: 165px
+    transition: 0
 
   &__info-wrapper
     position: relative
@@ -79,3 +77,17 @@
     font-size: 1.7em
     font-weight: 700
     color: #e07e00
+
+// ================= @media screen =================
+@media screen and (max-width: 1300px)
+  .wrapper
+    width: 965px
+
+@media screen and (max-width: 975px)
+  .wrapper
+    width: 645px
+
+@media screen and (max-width: 650px)
+  .wrapper
+    width: 315px
+
