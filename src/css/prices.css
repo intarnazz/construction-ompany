@@ -1,0 +1,12 @@
+.section-prices__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 9em;
+}
+.section-prices__title-top {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}/*# sourceMappingURL=prices.css.map */
