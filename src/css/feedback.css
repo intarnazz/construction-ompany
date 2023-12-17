@@ -1,1 +1,23 @@
-/*# sourceMappingURL=feedback.css.map */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-feedback__title {
+  display: flex;
+  justify-content: center;
+}
+.section-feedback__wrapper-link {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}/*# sourceMappingURL=feedback.css.map */

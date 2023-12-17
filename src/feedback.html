@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/normalise.css" />
+    <link rel="stylesheet" href="./css/google-icons.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/feedback.css" />
     <title>Document</title>
   </head>
   <body>
@@ -13,7 +15,13 @@
       <div class="header__wrapper wrapper">
         <div class="header__top">
           <div class="header__logo">
-            <img class="header__logo-img" src="./icons/logo-light.svg" alt="" />
+            <a class="header__logo-link" href="./index.html">
+              <img
+                class="header__logo-img"
+                src="./icons/logo-light.svg"
+                alt=""
+              />
+            </a>
             <h2>
               Комплексные <br />
               решения для фасадов
@@ -21,22 +29,83 @@
           </div>
           <nav class="header__nav nav">
             <ul class="nav__wrapper">
-              <a href="" class="nav__item-link">
-                <li class="nav__item">Услуги</li>
-              </a>
-              <a href="./prices.html" class="nav__item-link">
-                <li class="nav__item">Стоимость материалов и мотажа</li>
-              </a>
-              <a href="" class="nav__item-link">
-                <li class="nav__item">Портфолио</li>
-              </a>
+              <li class="nav__item">
+                <a href="./index.html#section-advantages" class="nav__item-link"> Услуги </a>
+              </li>
+              <li class="nav__item">
+                <a href="./prices.html" class="nav__item-link">
+                  Стоимость материалов и мотажа
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="./feedback.html" class="nav__item-link">
+                  Готовы обсудить проект?
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="header__bottom"></div>
       </div>
     </header>
-    <main></main>
+    <main class="main">
+      <section class="section-feedback margin-wrapper">
+        <div class="wrapper">
+          <h2 class="section-feedback__title">Готовы обсудить проект?</h2>
+          <div class="section-feedback__wrapper-link margin-wrapper">
+            <a class="button" href="tel:+79210253625"> +79210253625 ➔ </a>
+            <a class="button" href="mailto:sale@ksmspb.ru">
+              sale@ksmspb.ru ➔
+            </a>
+            <a class="button" href="https://t.me/ksm_spbbot" target="_blank">
+              @ksm_spbbot ➔
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <form class="ection-connect-with-us__form form" action="">
+          <div class="form__input-wrapper">
+            <div class="form__input-border">
+              <div class="form__icons">
+                <span class="material-symbols-outlined"> person </span>
+              </div>
+              <div class="form__line line"></div>
+              <input
+                class="form__input"
+                placeholder="Имя"
+                name="name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="form__input-border">
+              <div class="form__icons">
+                <span class="material-symbols-outlined"> call </span>
+              </div>
+              <div class="form__line line"></div>
+              <input
+                class="form__input"
+                type="text"
+                name="phone"
+                placeholder="Телефон"
+                required
+              />
+            </div>
+          </div>
+          <input class="form__button" type="submit" value="Заказать звонок" />
+        </form>
+      </div>
+
+      <div class="">
+        <script
+          type="text/javascript"
+          charset="utf-8"
+          async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aecdbfc6766101355eea6a917f7473be3f7716e05055ea75c2ce287dd8e4382ab&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=false"
+        ></script>
+      </div>
+    </main>
     <footer class="footer">
       <div class="footer__wrapper wrapper">
         <div class="logo">
@@ -45,20 +114,28 @@
         <div class="footer__nav-wrapper">
           <nav class="footer__nav nav">
             <ul class="nav__wrapper">
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Услуги</li>
-              </a>
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Стоимость материалов и мотажа</li>
-              </a>
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Портфолио</li>
-              </a>
+              <li class="nav__item">
+                <a href="" class="footer__item-link"> Услуги </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="footer__item-link">
+                  Стоимость материалов и мотажа
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="footer__item-link"> Портфолио </a>
+              </li>
             </ul>
           </nav>
           <div class="footer__address">
-            Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург,
-            Малая Балканская, 7, к. 4
+            <p>
+              Адреса офисов: Санкт-Петербург, пр.Гражданский, 26
+              Санкт-Петербург, Малая Балканская, 7, к4
+            </p>
+            <br />
+            <p>Информация на сайте не является публичной офертой.</p>
+            <br />
+            <p>Политика конфиденциальности Согласие на обработку данных</p>
           </div>
         </div>
         <div class="footer__div-empty"></div>

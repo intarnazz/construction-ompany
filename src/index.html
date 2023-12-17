@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/normalise.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/google-icons.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalise.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/google-icons.css">
     <title>KCM</title>
   </head>
   <body>
@@ -15,23 +15,35 @@
       <div class="header__wrapper wrapper">
         <div class="header__top">
           <div class="header__logo">
-            <img class="header__logo-img" src="./icons/logo-light.svg" alt="" />
+            <a class="header__logo-link" href="./index.html">
+              <img
+                class="header__logo-img"
+                src="./icons/logo-light.svg"
+                alt=""
+            >
+            </a>
             <h2>
-              Комплексные <br />
+              Комплексные <br>
               решения для фасадов
             </h2>
           </div>
           <nav class="header__nav nav">
             <ul class="nav__wrapper">
-              <a href="" class="nav__item-link">
-                <li class="nav__item">Услуги</li>
-              </a>
-              <a href="./prices.html" class="nav__item-link">
-                <li class="nav__item">Стоимость материалов и мотажа</li>
-              </a>
-              <a href="./feedback.html" class="nav__item-link">
-                <li class="nav__item">Готовы обсудить проект?</li>
-              </a>
+              <li class="nav__item">
+                <a href="#section-advantages" class="nav__item-link">
+                  Услуги
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="./prices.html" class="nav__item-link">
+                  Стоимость материалов и мотажа
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="./feedback.html" class="nav__item-link">
+                  Готовы обсудить проект?
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -40,7 +52,6 @@
     </header>
     <main class="main">
       <!-- Slider main container -->
-      <section class="section-swiper">
         <div class="swiper">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
@@ -71,7 +82,7 @@
                   </li>
                 </ul>
               </div>
-              <img class="swiper-slide__img" src="./img/swiper/3.png" alt="" />
+              <img class="swiper-slide__img" src="./img/swiper/3.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__bg"></div>
@@ -100,7 +111,7 @@
                   </li>
                 </ul>
               </div>
-              <img class="swiper-slide__img" src="./img/swiper/2.png" alt="" />
+              <img class="swiper-slide__img" src="./img/swiper/2.png" alt="">
             </div>
             <div class="swiper-slide">
               <div class="swiper-slide__bg"></div>
@@ -129,19 +140,18 @@
                   </li>
                 </ul>
               </div>
-              <img class="swiper-slide__img" src="./img/swiper/1.png" alt="" />
+              <img class="swiper-slide__img" src="./img/swiper/1.png" alt="">
             </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-      </section>
       <section class="section-connect-with-us margin-wrapper">
         <div class="section-connect-with-us__wrapper wrapper">
           <div class="section-connect-with-us__top">
             <h3>Хотите заказать фасад?</h3>
             <div class="section-connect-with-us__text-wrapper">
-              Проконсультируйтесь <br />
+              Проконсультируйтесь <br>
               со специалистом
             </div>
           </div>
@@ -159,7 +169,7 @@
                     name="name"
                     type="text"
                     required
-                  />
+                >
                 </div>
                 <div class="form__input-border">
                   <div class="form__icons">
@@ -172,36 +182,36 @@
                     name="phone"
                     placeholder="телефон"
                     required
-                  />
+                >
                 </div>
               </div>
               <input
                 class="form__button"
                 type="submit"
                 value="заказать звонок"
-              />
+            >
             </form>
           </div>
         </div>
       </section>
       <div class="wrapper">
-        <hr />
+        <hr id="section-advantages">
       </div>
       <section class="section-advantages">
         <div class="section-advantages__wrapper wrapper">
-          <h3 class="section-advantages__title">
+          <div class="section-advantages__title">
             <div class="section-advantages__title-top title">
               <div class="title__line"></div>
               <span class="material-symbols-outlined title__icon"> forum </span>
               <div class="title__line"></div>
             </div>
             <div class="section-advantages__title-bottom">
-              ПРЕИМУЩЕСТВА<br />
+              ПРЕИМУЩЕСТВА<br>
               <span style="font-size: 0.8em; font-weight: 500">
                 НАШИХ ФАСАДОВ
               </span>
             </div>
-          </h3>
+          </div>
           <ul class="section-advantages__list margin-wrapper">
             <li
               class="section-advantages__item section-advantages__item_orange"
@@ -210,7 +220,7 @@
                 class="section-advantages__item-bg"
                 src="./img/bg/bg.jpg"
                 alt=""
-              />
+            >
               <h4 class="section-advantages__item-title">
                 Бесплатно проведем первичное обследование, фотофиксацию и замеры
                 на объекте
@@ -228,7 +238,7 @@
                 style="height: 637px"
                 src="./img/bg/bg2.jpg"
                 alt=""
-              />
+            >
               <h4 class="section-advantages__item-title">
                 Подготовим 3 варианта решения фасада с разными материалами,
                 фактурами, цветами
@@ -259,6 +269,12 @@
             <li
               class="section-advantages__item section-advantages__item_grey-blue"
             >
+            <img
+            class="section-advantages__item-bg"
+            style="height: 677px"
+            src="./img/bg/bg3.jpg"
+            alt=""
+        >
               <h4 class="section-advantages__item-title">
                 Производим сертифицированные фасадные системы
               </h4>
@@ -269,13 +285,6 @@
                 окраска.
               </div>
               <ul class="section-advantages__item-info-list margin-wrapper">
-                <img
-                  class="section-advantages__item-bg"
-                  style="height: 677px"
-                  src="./img/bg/bg3.jpg"
-                  alt=""
-                />
-
                 <li
                   class="section-advantages__item-info-item section-advantages__item-info-item"
                 >
@@ -303,40 +312,46 @@
           </ul>
         </div>
       </section>
-      <section class="map margin-wrapper">
         <div class="margin-wrapper">
           <!-- <div class="map__hiden"></div> -->
           <script
-            type="text/javascript"
-            charset="utf-8"
             async
             src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aecdbfc6766101355eea6a917f7473be3f7716e05055ea75c2ce287dd8e4382ab&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=false"
           ></script>
         </div>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper wrapper">
         <div class="logo">
-          <img class="footer__logo-img" src="./icons/logo.svg" alt="" />
+          <img class="footer__logo-img" src="./icons/logo.svg" alt="">
         </div>
         <div class="footer__nav-wrapper">
-          <nav class="footer__nav nav">
+          <nav class="header__nav nav">
             <ul class="nav__wrapper">
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Услуги</li>
-              </a>
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Стоимость материалов и мотажа</li>
-              </a>
-              <a href="" class="footer__item-link">
-                <li class="nav__item">Портфолио</li>
-              </a>
+              <li class="nav__item">
+                <a href="" class="nav__item-link"> Услуги </a>
+              </li>
+              <li class="nav__item">
+                <a href="./prices.html" class="nav__item-link">
+                  Стоимость материалов и мотажа
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="./feedback.html" class="nav__item-link">
+                  Готовы обсудить проект?
+                </a>
+              </li>
             </ul>
           </nav>
           <div class="footer__address">
-            Адреса офисов: Санкт-Петербург, пр.Гражданский, 26 Санкт-Петербург,
-            Малая Балканская, 7, к. 4
+            <p>
+              Адреса офисов: Санкт-Петербург, пр.Гражданский, 26
+              Санкт-Петербург, Малая Балканская, 7, к4
+            </p>
+            <br>
+            <p>Информация на сайте не является публичной офертой.</p>
+            <br>
+            <p>Политика конфиденциальности Согласие на обработку данных</p>
           </div>
         </div>
         <div class="footer__div-empty"></div>

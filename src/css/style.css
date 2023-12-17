@@ -71,6 +71,21 @@ hr {
   margin-top: 2em;
 }
 
+.button {
+  border: 1px solid #000;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  background-color: rgba(41, 95, 136, 0.2);
+}
+
+.swiper {
+  background-color: rgb(41, 95, 136);
+}
+
 .header {
   background-color: rgb(41, 95, 136);
   width: 100%;
@@ -325,12 +340,9 @@ hr {
   gap: 2em;
 }
 
-.title {
-  gap: 0.1em;
-  display: flex;
-  align-items: center;
-}
-.title__line {
-  width: 4em;
-  border-top: 3px solid #e07e00;
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    width: auto;
+    padding: 0 1em;
+  }
 }/*# sourceMappingURL=style.css.map */

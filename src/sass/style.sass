@@ -16,11 +16,6 @@ $grey: rgba(0, 0, 0, .5)
   background-color: #202020
   border-radius: 6px
 
-// input[type="number"]::-webkit-inner-spin-button,
-// input[type="number"]::-webkit-outer-spin-button
-//   -webkit-appearance: none
-//   margin: 0
-
 *
   box-sizing: border-box
 
@@ -66,6 +61,17 @@ hr
 
 .margin-wrapper
   margin-top: 2em
+
+.button
+  border: 1px solid #000
+  padding: .5em 1em
+  border-radius: 20px
+  transition: .5s
+.button:hover
+  background-color: rgba(41, 95, 136, 0.2)
+
+.swiper
+  background-color: $hederColor
 
 .header
   background-color: $hederColor
@@ -270,11 +276,7 @@ hr
     flex-direction: column
     gap: 2em
 
-.title
-  gap: .1em
-  display: flex
-  align-items: center
-  &__line
-    width: 4em
-    border-top: 3px solid $secondColor
-
+@media screen and (max-width: 1300px)
+  .wrapper
+    width: auto
+    padding: 0 1em
