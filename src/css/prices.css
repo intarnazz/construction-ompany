@@ -70,6 +70,9 @@
   height: 294px;
   opacity: 0.1;
 }
+.list-offers__info-bg_little {
+  height: 165px;
+}
 .list-offers__info-wrapper {
   position: relative;
   flex: 1;
