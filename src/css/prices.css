@@ -67,7 +67,7 @@
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 290px;
+  width: 300px;
   opacity: 0.1;
   transition: 0;
 }
