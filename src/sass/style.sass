@@ -299,6 +299,8 @@ hr
     gap: 2em
 
 @media screen and (max-width: 1300px)
+  body
+    font-size: 15px
   .wrapper
     width: 100%
   .section-advantages
@@ -309,13 +311,22 @@ hr
       left: 10px
   .section-advantages
     &__item
-      padding: 1em 1em
+      padding: 7em
     &__item-title
       padding: 0
     &__item-text
       padding: 0
 
+@media screen and (max-width: 970px)
+  body
+    font-size: 14px
+  .section-advantages
+    &__item
+      padding: 3em
+
 @media screen and (max-width: 770px)
+  body
+    font-size: 13px
   .section-connect-with-us
     &__top
       display: flex
@@ -328,6 +339,9 @@ hr
     &__input-wrapper
       display: flex
       justify-content: center
+  .section-advantages
+    &__item
+      padding: 1em
 
 @media screen and (max-width: 680px)
   .header
@@ -341,14 +355,14 @@ hr
   .swiper-slide
     &__img
       height: calc(100vh - 200px)
+  .section-advantages
+    &__item-info-list
+      flex-direction: column
+
 
 @media screen and (max-width: 426px)
-  body
-    font-size: 13px
   .header
     &__title
       display: none
     &__top
       justify-content: center
-
-
