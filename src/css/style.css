@@ -413,7 +413,7 @@ hr {
     padding: 0;
   }
   .swiper-slide__info_wrapper {
-    left: 10px;
+    left: 30px;
   }
 }
 @media screen and (max-width: 970px) {
