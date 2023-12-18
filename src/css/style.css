@@ -468,6 +468,9 @@ hr {
   .section-advantages__item {
     padding: 1em;
   }
+  .button-UP {
+    display: none;
+  }
 }
 @media screen and (max-width: 426px) {
   h4 {

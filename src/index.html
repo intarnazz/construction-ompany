@@ -11,7 +11,7 @@
     <title>KCM</title>
   </head>
   <body>
-    <header class="header">
+    <header id="body" class="header">
       <div class="header__wrapper wrapper">
         <div class="header__top">
           <div class="header__logo">
@@ -50,13 +50,13 @@
         <div class="header__bottom"></div>
       </div>
     </header>
-    <div class="button-UP" onclick="scrollTopEvent()">
+    <a class="button-UP" href="#body">
       <span
         class="button-UP__material-symbols-outlined material-symbols-outlined"
       >
         north
       </span>
-    </div>
+    </a>
     <main class="main">
       <!-- Slider main container -->
       <div class="swiper">
@@ -335,7 +335,9 @@
     <footer class="footer">
       <div class="footer__wrapper wrapper">
         <div class="logo">
-          <img class="footer__logo-img" src="./icons/logo.svg" alt="" />
+          <a class="header__logo-link" href="./index.html">
+            <img class="footer__logo-img" src="./icons/logo.svg" alt="" />
+          </a>
         </div>
         <div class="footer__nav-wrapper">
           <nav class="footer__nav nav">
@@ -371,6 +373,5 @@
     </footer>
     <script src="./js/swiper.js"></script>
     <script src="./js/swiper_init.js"></script>
-    <script src="./js/script.js"></script>
   </body>
 </html>

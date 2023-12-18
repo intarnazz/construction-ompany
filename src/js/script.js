@@ -1,7 +1,3 @@
-function scrollTopEvent() {
-  document.documentElement.scrollTop = 0;
-}
-
 async function handleResize() {
   setTimeout(() => {
     const imgBoxArr = document.querySelectorAll(".list-offers__info-wrapper");
@@ -9,10 +5,9 @@ async function handleResize() {
     let i = 0;
     imgBoxArr.forEach((imgBox) => {
       imgArr[i].style.height = `${imgBox.clientHeight}px`;
-      console.log(imgArr[i].clientHeight);
       i++;
     });
-  }, 600);
+  }, 501);
 }
 handleResize();
 window.addEventListener("resize", handleResize);

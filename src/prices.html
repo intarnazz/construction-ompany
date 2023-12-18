@@ -18,7 +18,7 @@
     <title>Стоимость товаров и монтажа</title>
   </head>
   <body>
-    <header class="header">
+    <header id="body" class="header">
       <div class="header__wrapper wrapper">
         <div class="header__top">
           <div class="header__logo">
@@ -29,7 +29,7 @@
                 alt=""
               />
             </a>
-            <h2>
+            <h2 class="header__title">
               Комплексные <br />
               решения для фасадов
             </h2>
@@ -37,10 +37,7 @@
           <nav class="header__nav nav">
             <ul class="nav__wrapper">
               <li class="nav__item">
-                <a
-                  href="./index.html#section-advantages"
-                  class="nav__item-link"
-                >
+                <a href="#section-advantages" class="nav__item-link">
                   Услуги
                 </a>
               </li>
@@ -332,21 +329,23 @@
     <footer class="footer">
       <div class="footer__wrapper wrapper">
         <div class="logo">
-          <img class="footer__logo-img" src="./icons/logo.svg" alt="" />
+          <a class="header__logo-link" href="./index.html">
+            <img class="footer__logo-img" src="./icons/logo.svg" alt="" />
+          </a>
         </div>
         <div class="footer__nav-wrapper">
-          <nav class="header__nav nav">
+          <nav class="footer__nav nav">
             <ul class="nav__wrapper">
               <li class="nav__item">
-                <a href="" class="nav__item-link"> Услуги </a>
+                <a href="" class="nav__item-link_black"> Услуги </a>
               </li>
               <li class="nav__item">
-                <a href="./prices.html" class="nav__item-link">
+                <a href="./prices.html" class="nav__item-link_black">
                   Стоимость материалов и мотажа
                 </a>
               </li>
               <li class="nav__item">
-                <a href="./feedback.html" class="nav__item-link">
+                <a href="./feedback.html" class="nav__item-link_black">
                   Готовы обсудить проект?
                 </a>
               </li>
