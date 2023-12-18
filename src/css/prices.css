@@ -91,6 +91,9 @@
   .wrapper {
     width: 965px;
   }
+  .section-prices__title {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 975px) {
   .wrapper {
@@ -99,6 +102,30 @@
 }
 @media screen and (max-width: 650px) {
   .wrapper {
-    width: 315px;
+    width: 300px;
+  }
+  .list-offers {
+    display: flex;
+    flex-direction: column;
+  }
+  .list-offers__item:hover {
+    scale: 1.1;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.7em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .list-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-offers__item {
+    width: 250px;
+  }
+  .list-offers__info-bg {
+    width: 250px;
   }
 }/*# sourceMappingURL=prices.css.map */

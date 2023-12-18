@@ -1,5 +1,4 @@
 @import ./var.sass
-
   
 .section-prices
   &__title
@@ -82,6 +81,9 @@
 @media screen and (max-width: 1300px)
   .wrapper
     width: 965px
+  .section-prices
+    &__title
+      padding: 0
 
 @media screen and (max-width: 975px)
   .wrapper
@@ -89,5 +91,24 @@
 
 @media screen and (max-width: 650px)
   .wrapper
-    width: 315px
+    width: 300px
+  .list-offers
+    display: flex
+    flex-direction: column
+    &__item:hover
+      scale: 1.1
+  h2
+    text-align: center
+    font-size: 1.7em
+
+@media screen and (max-width: 400px)
+  .list-offers
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__item
+      width: 250px
+    &__info-bg
+      width: 250px
+
 
