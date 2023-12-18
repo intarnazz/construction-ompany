@@ -107,7 +107,7 @@ hr {
   background-color: #295f88;
   width: 100%;
   display: flex;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   height: 120px;
   padding: 20px;
 }
@@ -136,7 +136,7 @@ hr {
   gap: 1em;
 }
 .nav__item-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 .nav__item-link__black {
   color: #f9f6f3;
@@ -151,7 +151,7 @@ hr {
 }
 
 .swiper-slide {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 .swiper-slide__img {
   -o-object-fit: cover;
@@ -293,7 +293,7 @@ hr {
   position: relative;
   padding: 7em 7em;
   width: 100%;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   display: flex;
   gap: 1em;
   flex-direction: column;
